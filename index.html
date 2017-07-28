@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diffusion-limited Aggregation</title>
+    <link href='//fonts.googleapis.com/css?family=Libre+Baskerville' rel='stylesheet' type='text/css'>
+    <link href="/public/stylesheets/styles.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="title">D. L. A.</h1>
+      <p class="subtitle">Diffusion-Limited Aggregation</p>
+      <canvas height="500px" width="550px" class="system"></canvas>
+      <label class="label">Select a site of nucleation:</label>
+      <select class="nucleation">
+        <option selected disabled hidden>Select a site</option>
+        <option value="centerpoint">Center Point</option>
+        <option value="horizontal">Line</option>
+        <option value="box">Box</option>
+        <option value="circle">Circle</option>
+        <option value="scatter">Scatter</option>
+      </select>
+    </div>
+  </body>
+  <script src="/public/javascripts/namespace.js"></script>
+  <script src="/public/javascripts/models/vector.js"></script>
+  <script src="/public/javascripts/models/particle.js"></script>
+  <script src="/public/javascripts/models/particles.js"></script>
+  <script src="/public/javascripts/models/crucible.js"></script>
+  <script src="/public/javascripts/views/system.js"></script>
+  <script src="/public/javascripts/main.js"></script>
+</html>
